@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Footer } from "./Components/Footer";
+import { SideBar } from "./Components/SideBar";
+import Topo from "./Components/Topo";
+import RotasSideBar from "./router";
+import * as C from './styles/AppStyles';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <C.Container>
+          <Topo/>
+          <C.Content>
+              <SideBar/>
+              <RotasSideBar/>
+          </C.Content>
+          <Footer/>
+      </C.Container>
+    </Router>
   );
 }
-
-export default App;
