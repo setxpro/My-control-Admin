@@ -7,8 +7,8 @@ import * as C from './styles';
 
 function Dashboard() {
 
-    const {dark, sidebar} = useContext(SidebarContext);
-
+  const {dark, sidebar, filterRepo} = useContext(SidebarContext);
+  
   return (
       <ContainerGeneral mode={dark} wdt={sidebar}>
         <h1>Dashboard</h1>

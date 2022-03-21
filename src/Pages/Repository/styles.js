@@ -79,3 +79,13 @@ export const Description = styled.p`
     overflow: hidden;
     white-space: nowrap;
 `;
+
+export const InputSearch = styled.input`
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 250px;
+`;

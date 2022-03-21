@@ -1,6 +1,7 @@
+
 export const stream = [
     {
-      "Javascript": 167,
+      "Javascript": 180,
       "ReactJS": 49,
       "Typescript": 43,
       "Laravel": 131,
@@ -65,3 +66,4 @@ export const stream = [
       "HTML": 168
     }
   ];
+

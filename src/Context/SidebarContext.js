@@ -9,9 +9,24 @@ export default function SideBarProvider({children}) {
 
     const [dark, setDark] = useState(false);
     const [light, setLight] = useState(true);
+
+    const [spinner, setSpinner] = useState(false);
+    
+    
     
     return(
-        <SidebarContext.Provider value={{ sidebar, setSidebar, showSidebar, dark, setDark, light, setLight }}>
+        <SidebarContext.Provider value={{ 
+            sidebar, 
+            setSidebar, 
+            showSidebar, 
+            dark, 
+            setDark, 
+            light, 
+            setLight,
+            spinner,
+            setSpinner
+            
+        }}>
             {children}
         </SidebarContext.Provider>
     );
